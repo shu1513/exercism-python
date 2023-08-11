@@ -7,7 +7,7 @@ def modifier(number):
 
 class Character:
     @staticmethod
-    def get_trait():
+    def ability():
         dices = []
 
         for i in range(4):
@@ -16,10 +16,10 @@ class Character:
         return sum(dices)
 
     def __init__(self):
-        self.strength = Character.get_trait()
-        self.dexterity = Character.get_trait()
-        self.constitution = Character.get_trait()
-        self.intelligence = Character.get_trait()
-        self.wisdom = Character.get_trait()
-        self.charisma = Character.get_trait()
+        self.strength = Character.ability()
+        self.dexterity = Character.ability()
+        self.constitution = Character.ability()
+        self.intelligence = Character.ability()
+        self.wisdom = Character.ability()
+        self.charisma = Character.ability()
         self.hitpoints = 10 + modifier(self.constitution)

@@ -32,8 +32,8 @@ class Garden:
 
     def plants(self, name):
         index = self.students.index(name) * 2
-        return 
-            [Garden.plantsnames[each[i]]]
+        return [
+            Garden.plantsnames[each[i]]
             for each in self.diagram
             for i in (index, index + 1)
-        
+        ]
