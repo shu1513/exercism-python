@@ -52,24 +52,13 @@ export const recipe = {
 };
 
 
-//why this code below didn't work? why recipe.meat / 2 * portions gives me Nan?
+
+
 
 export function scaleRecipe(recipe, portions) {
-    return {
-        'noodles': recipe.noodles / 2 * portions,
-        'sauce': recipe.sauce / 2 * portions,
-        'mozzarella': recipe.mozzarella / 2 * portions,
-        'meat': recipe.meat / 2 * portions,
-    }
-}
-
-
-//this works. but the one above didn't work. why?
-/*export function scaleRecipe(recipe, portions) {
     let myrecipe = {};
     for (let ingredient in recipe) {
         myrecipe[ingredient] = recipe[ingredient] / 2 * portions;
     }
     return myrecipe;
 }
-*/
